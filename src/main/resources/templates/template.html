@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+</head>
+<style>
+    @page {
+        size: A4 landscape;
+        margin: 0;
+    }
+
+    body {
+        width: 297mm;
+        height: 210mm;
+        margin: 0;
+        font-family: 'Arial', sans-serif;
+        background-image: url('file:src/main/resources/static/images/moldura.png');
+        background-size: cover;
+        position: relative;
+    }
+
+    .conteudo {
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        text-align: center;
+        transform: translateY(-50%);
+    }
+
+    .titulo {
+        font-size: 32px;
+        font-weight: bold;
+        color: #2f6338;
+        margin-bottom: 40px;
+    }
+
+    .nome {
+        font-size: 28px;
+        font-weight: normal;
+        color: #000000;
+    }
+</style>
+<body>
+<div class="conteudo">
+    <div class="titulo">Certificado de Participação</div>
+    <div class="nome" th:text="${nome}">Nome do Participante</div>
+</div>
+</body>
+</html>

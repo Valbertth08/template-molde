@@ -1,4 +1,4 @@
-package pdf.certificado.template;
+package pdf.certificado.template.pdf;
 
 import com.itextpdf.io.image.ImageDataFactory;
 import com.itextpdf.io.util.StreamUtil;
